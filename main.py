@@ -40,7 +40,8 @@ def clean_blue_text_must_click(update: Update, context: CallbackContext):
                  user = bot.get_chat(link)
                  print(user.id)
                  if len(str(user.id)) > 12:
-                    message.reply_text(f"{users.first_name}, your message was hidden, chat usernames not allowed in this group.")
+                    message.reply_text(f"{users.first_name}, your message was hidden, chat usernames not allowed in this group
+Owner » @Finex_xD.")
                     message.delete()
              except:
                  return
